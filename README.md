@@ -8,7 +8,7 @@ Created by **Ans Studio**, it features persistent linking, automatic location up
 ## 🔗 Discord Bot
 
 👉 GitHub repository for the companion Discord bot:  
-**https://github.com/anlongawf/discord-voice-bot**
+**https://github.com/anlongawf/bot-voicelinker**
 
 ---
 
