@@ -1,0 +1,8 @@
+*.class
+/bin/
+/out/
+.idea/
+.vscode/
+*.iml
+*.log
+linked_players.json

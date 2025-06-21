@@ -1,0 +1,72 @@
+# =================================
+# Ans VoiceLinker Plugin Configuration
+# =================================
+
+# This is a product of Ans Studio. Join our community:
+# https://discord.gg/k99aC2mYJj
+
+# Discord Bot API Configuration
+api:
+  # Base URL of your Discord bot server
+  # Change this to your actual bot server URL
+  base_url: "localhost"
+
+  # Connection timeout in seconds
+  timeout: 10
+
+  # Retry attempts for failed requests
+  retry_attempts: 3
+
+# Position Update Settings
+position:
+  # Minimum distance (in blocks) a player must move before triggering an update
+  movement_threshold: 2.0
+
+  # How often to send position updates (in seconds) - for periodic updates
+  update_interval: 2
+
+  # Maximum distance for proximity chat (should match Discord bot config)
+  proximity_distance: 30
+
+# Plugin Messages
+messages:
+  # Prefix for all plugin messages
+  prefix: "§b[Ans VoiceLinker]§r"
+
+  # Success messages
+  link_success: "§a Successfully linked with Discord ID: {discord_id}"
+  unlink_success: "§a Successfully unlinked from Discord!"
+  welcome_linked: "§a Welcome! Your Discord account is now linked."
+
+  # Error messages
+  link_error: "§c Error linking Discord: {error}"
+  connection_error: "§c Could not connect to the Discord bot!"
+  not_linked: "§c You have not linked your Discord account!"
+  player_only: "§c This command can only be used by players!"
+
+  # Usage messages
+#  link_usage: "§e Use /linkdiscord <Discord_ID> to link your Discord account!"
+  command_usage: "§c Usage: /linkdiscord <Discord_ID>"
+
+# Debug Settings
+debug:
+  # Enable debug logging
+  enabled: false
+
+  # Log all position updates
+  log_position_updates: false
+
+  # Log API requests and responses
+  log_api_calls: false
+
+# Performance Settings
+performance:
+  # Use async processing for all API calls
+  async_api_calls: true
+
+  # Cache player positions to reduce API calls
+  cache_positions: true
+
+  # Maximum number of concurrent API requests
+  max_concurrent_requests: 10
+

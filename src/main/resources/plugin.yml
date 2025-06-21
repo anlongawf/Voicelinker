@@ -1,0 +1,27 @@
+name: VoiceLinker
+version: 2.0.0
+description: Links Minecraft players with Discord for proximity voice chat
+author: YourName
+main: main.VoiceLinker
+api-version: 1.18
+
+commands:
+  linkdiscord:
+    description: Link your Minecraft account with Discord
+    usage: /linkdiscord <Discord_ID>
+    permission-message: "§cBạn không có quyền sử dụng lệnh này!"
+
+  unlinkdiscord:
+    description: Unlink your Discord account
+    usage: /unlinkdiscord
+    permission-message: "§cBạn không có quyền sử dụng lệnh này!"
+
+  voicelinker:
+    description: VoiceLinker plugin management
+    usage: /voicelinker [reload|info]
+    permission-message: "§cBạn không có quyền sử dụng lệnh này!"
+
+permissions:
+  voicelinker.reload:
+    description: Allows reloading plugin configuration
+    default: op
